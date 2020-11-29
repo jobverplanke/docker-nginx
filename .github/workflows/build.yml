@@ -46,7 +46,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           build-args: |
-            PHP_VERSION=${{ matrix.php }}
+            NGINX_VERSION=${{ matrix.nginx }}
             TZ=Europa/Amsterdam
           tags: |
             ghcr.io/${{ github.actor }}/nginx:${{ matrix.nginx }}
