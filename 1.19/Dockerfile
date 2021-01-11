@@ -3,7 +3,7 @@ FROM nginx:1.19-alpine
 LABEL maintainer="Job Verplanke <job.verplanke@gmail.com>"
 LABEL org.opencontainers.image.source="https://github.com/jobverplanke/docker-nginx"
 
-ARG TZ
+ARG TZ=Europa/Amsterdam
 
 RUN set -eux \
     && apk add --no-cache tzdata \
